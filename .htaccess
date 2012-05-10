@@ -1,0 +1,18 @@
+<FilesMatch "\.(yml)$">
+Order Deny,Allow
+Deny from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Does not allow www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule (.*) http://%1/rerephpfw-startup-kit/$1 [R=301,L]
+
+# Rewrite url
+RewriteBase /rerephpfw-startup-kit/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /rerephpfw-startup-kit/rerephpfw/index.php [L]
+</IfModule>

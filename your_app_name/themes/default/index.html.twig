@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{% block title %}{% endblock %}</title>
+<link rel="shortcut icon" href="{{ get_theme_url() }}images/favicon.ico" alt=""/>
+<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/reset.css" />
+<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/typography.css" />
+<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/text.css" />
+<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/grid.css" />
+<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/style.css" />
+{% block head %}
+{% endblock %}
+</head>
+<body>
+{% block header %}{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
+{% block external_scripts %}
+<script src="{{ get_theme_url() }}js/jquery.js"></script>
+{% endblock %}
+</body>
+</html>

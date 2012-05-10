@@ -1,0 +1,24 @@
+website:
+    theme: default
+    culture: en_US
+    plugins: [firewall,facebook]
+db:
+    host: localhost
+    dbname: your_db_name
+    user: root
+    pwd: 
+facebook:
+    app_name: your_fb_app_name
+    app_id: your_fb_app_id
+    secret: your_fb_secret_key
+    async: true
+    cookie: true
+    xfbml: true
+    oauth2: true
+    status: false
+    logging: true
+    allow_logout: false
+    permissions: "email,user_photos,user_birthday,user_online_presence,publish_actions,publish_stream"
+twitter:
+    consumer_key: your_twitter_consumer_key
+    consumer_secret: your_twitter_consumer_secret

@@ -1,0 +1,28 @@
+home:
+    path: /
+    pattern: ^[/]?$
+    controller: controllers/frontend.php
+login:
+    path: /fb_oauth
+    pattern: ^/fb_oauth[/]?$
+    controller: ../rerephpfw/plugins/facebook/controller.php
+login_check:
+    path: /fb_oauth_check
+    pattern: ^/fb_oauth_check[/]?$
+    controller: ../rerephpfw/plugins/facebook/controller.php
+logout:
+    path: /logout
+    pattern: ^/logout[/]?$
+    controller: ../rerephpfw/plugins/facebook/controller.php
+#login:
+#    path: /twitter_oauth
+#    pattern: ^/twitter_oauth$
+#    controller: ../rerephpfw/plugins/twitter/controller.php
+#login_check:
+#    path: /twitter_oauth_check
+#    pattern: ^/twitter_oauth_check$
+#    controller: ../rerephpfw/plugins/twitter/controller.php
+#logout:
+#    path: /logout
+#    pattern: ^/logout$
+#    controller: ../rerephpfw/plugins/twitter/controller.php

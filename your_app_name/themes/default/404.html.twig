@@ -1,0 +1,12 @@
+{% extends "index.html.twig" %}
+{% block title %}Error 404{% endblock %}
+
+{% block content %}
+<div class="row">
+	<div class="col_16">
+		<h1>Error 404</h1>
+		<p>Sorry, the page you are looking for cannot be found!</p>
+		<a href="{{ get_url('home') }}">Back to Home</a>
+	</div>
+</div>
+{% endblock %}
