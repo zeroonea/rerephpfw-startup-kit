@@ -1,7 +1,7 @@
 <?php
 
 /* 404.html.twig */
-class __TwigTemplate_76ee155f79fbb15df10f6a73f6368f39 extends Twig_Template
+class __TwigTemplate_fe11a8637b522251d76d7a11ea6a8e9a extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -35,7 +35,16 @@ class __TwigTemplate_76ee155f79fbb15df10f6a73f6368f39 extends Twig_Template
     public function block_content($context, array $blocks = array())
     {
         // line 5
-        echo "Sorry, the page you are looking for cannot be found!
+        echo "<div class=\"row\">
+\t<div class=\"col_16\">
+\t\t<h1>Error 404</h1>
+\t\t<p>Sorry, the page you are looking for cannot be found!</p>
+\t\t<a href=\"";
+        // line 9
+        echo twig_escape_filter($this->env, get_url("home"), "html", null, true);
+        echo "\">Back to Home</a>
+\t</div>
+</div>
 ";
     }
 
@@ -51,6 +60,6 @@ class __TwigTemplate_76ee155f79fbb15df10f6a73f6368f39 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  36 => 5,  33 => 4,  27 => 2,);
+        return array (  42 => 9,  36 => 5,  33 => 4,  27 => 2,);
     }
 }

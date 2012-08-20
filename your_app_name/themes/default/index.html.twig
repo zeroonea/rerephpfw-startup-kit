@@ -1,23 +1,32 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
 <title>{% block title %}{% endblock %}</title>
-<link rel="shortcut icon" href="{{ get_theme_url() }}images/favicon.ico" alt=""/>
-<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/reset.css" />
-<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/typography.css" />
-<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/text.css" />
-<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/grid.css" />
-<link rel="stylesheet" type="text/css" href="{{ get_theme_url() }}css/style.css" />
-{% block head %}
-{% endblock %}
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="{{ get_theme_url() }}images/favicon.png" alt="thehe.ro"/>
+{{ add_ext_css(get_theme_url() ~ 'css/reset.css') }}
+{{ add_ext_css(get_theme_url() ~ 'css/typography.css') }}
+{{ add_ext_css(get_theme_url() ~ 'css/text.css') }}
+{{ add_ext_css(get_theme_url() ~ 'css/grid.css') }}
+{{ add_ext_css(get_theme_url() ~ 'css/style.css') }}
+{% block custom_styles %}{% endblock %}
+{{ print_all_ext_css() | raw }} 
+<script src="{{ get_theme_url() }}js/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+{% block head %}{% endblock %}
 </head>
 <body>
-{% block header %}{% endblock %}
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 {% block content %}{% endblock %}
-{% block footer %}{% endblock %}
 {% block external_scripts %}
 <script src="{{ get_theme_url() }}js/jquery.js"></script>
 {% endblock %}
+{% block custom_scripts %}{% endblock %}
 </body>
 </html>

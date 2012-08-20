@@ -1,3 +1,4 @@
 app: your_app_name
 basefolder: rerephpfw-startup-kit
 mode: localhost
+timezone: UTC

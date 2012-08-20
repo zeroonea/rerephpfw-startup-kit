@@ -1,0 +1,258 @@
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video{
+margin:0;    padding:0;    border:0;    outline:0;    vertical-align:baseline;    background:transparent;
+}
+body{
+line-height:1;
+}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
+display:block;
+}
+nav ul{
+list-style:none;
+}
+blockquote, q{
+quotes:none;
+}
+blockquote:before, blockquote:after,q:before, q:after{
+content:'';    content:none;
+}
+a{
+margin:0;    padding:0;    font-size:100%;    vertical-align:baseline;    background:transparent;
+}
+a{
+margin:0;    padding:0;    font-size:100%;    vertical-align:baseline;    background:transparent;
+}
+ins{
+background-color:#ff9;    color:#000;    text-decoration:none;
+}
+mark{
+background-color:#ff9;    color:#000;     font-style:italic;    font-weight:bold;
+}
+del{
+text-decoration: line-through;
+}
+abbr[title], dfn[title]{
+border-bottom:1px dotted #000;    cursor:help;
+}
+table{
+border-collapse:collapse;    border-spacing:0;
+}
+hr{
+display:block;    height:1px;    border:0;       border-top:1px solid #cccccc;    margin:1em 0;    padding:0;
+}
+input, select{
+vertical-align:middle;
+}
+body{
+font:14px/22px Helvetica, Arial, Verdana, sans-serif;
+}
+a{
+color: #1982d1;text-decoration: none;
+}
+a:focus, a:active, a:hover{
+color: #006699;text-decoration: none;
+}
+h2, h3, h4, h5, h6{
+padding: 0px 0px 0px 0px;
+}
+#header h1{
+font-weight:bolder;margin: 45px 0px 0px 0px;padding: 10px 20px 10px 0px;border-right: 1px solid #ccc;float: left;
+}
+#header h1 a{
+color: black;font-size:42px;letter-spacing:-2.5px;text-decoration: none;
+}
+#header h1 a:hover{
+color: #333;text-decoration: none;
+}
+.description{
+color: #777777;float: left;margin: 55px 0px 0px 0px;padding: 0px 0px 0px 20px;
+}
+.bread-crumb{
+color: #777777;font-size: 10px;background: #f3f3f3;margin: 0px 0px 20px 0px;padding: 5px 5px 5px 10px;
+}
+.postdate{
+text-align: center;text-shadow: #777 0px 1px 0px;
+}
+.postmonth{
+color: #FFF;font-size: 11px;text-transform: uppercase;font-weight:bolder;padding: 0px;margin: 0px;
+}
+.postday{
+color: #fff;font-weight:bolder;font-size: 25px;padding: 0px;margin: 0px;
+}
+h1{
+font-size:36px;color:#777;letter-spacing:-2px;padding: 10px 0px 10px 0px;font-weight:lighter;margin: 0px;
+}
+h2{
+font-size:24px;padding: 0px;margin: 0px 0px 5px 0px;color:#000;letter-spacing:-1px;margin:0px;
+}
+h3{
+font-size:18px;color:#000;letter-spacing:-1px;
+}
+h4{
+font-size:16px;color:#000;letter-spacing:-1px;
+}
+h5{
+font-size:14px;color:#000;font-weight:lighter;
+}
+h6{
+font-size:12px;color:#000;letter-spacing:-.5px;font-weight:lighter;
+}
+p{
+font-size:14px;letter-spacing:0;padding: 0px 0px 15px 0px;
+}
+a{
+color:#08c;
+}
+pre{
+font-size:11px;color:#000;letter-spacing:0;background-color:#f3f3f3;
+}
+code{
+font-size:11px;color:#066;letter-spacing:0;background-color:#0F9;padding:2px;
+}
+blockquote{
+font-style:italic;color:#333;margin:5px;padding: 10px 10px 0px 30px;background: url(http://localhost/rerephpfw-startup-kit/your_app_name/themes/default/images/quotes.png) no-repeat top left;
+}
+em{
+font-style:italic;
+}
+.sidebaritem{
+padding: 0px 0px 10px 0px;margin: 0px 0px 10px 0px;border-bottom: 1px dotted #ccc;
+}
+#sidebar ul{
+list-style-type: none;padding: 0px 0px 0px 0px;
+}
+.no-widgets h2{
+margin: 15px 0px 0px 0px;
+}
+#sidebar ul li{
+padding: 0px 0px 0px 0px;margin: 0px;
+}
+#sidebar #h3{
+padding: 20px;margin: 0px;
+}
+.post ul, .post ol{
+padding: 0px 0px 10px 30px;
+}
+.postmetadata{
+border-top: dotted 1px #e3e3e3;padding: 15px 0px 5px 0px;color: #777777;font-size: 10px;line-height: 18px;text-transform: capitalize;clear: both;
+}
+#comments-title:before{
+content:"Comments: ";
+}
+#comments-title{
+padding: 30px 0px 0px 0px;margin: 0px;text-align: center!important;
+}
+.comment-author{
+font-weight:bolder;font-size: 14px;font-style:italic;text-transform: capitalize;margin: 20px 0px 5px 0px;padding: 5px;background: #e3e3e3;
+}
+#comment-block{
+margin: 0px 0px 30px 0px;
+}
+#comment-block ol{
+padding:20px;margin:10px 0px 30px 0px;padding: 0px 0px 0px 40px;font-size: 16px;
+}
+#comment-block ol ul{
+list-style-type: none;padding: 0px 0px 0px 40px;
+}
+a.comment-reply-link{
+font:bold 12px Arial, Helvetica, sans-serif;color:#444!important;text-shadow:0 1px 0 #eee;cursor:pointer;background:#aaa;background:-moz-linear-gradient(bottom, #aaa, #cecece);background:-webkit-gradient(linear, left bottom, left top, from(#aaa), to(#cecece));border:0px;padding:2px 13px;margin:0;width:70px;height:auto;
+}
+.commentmetadata{
+font-size: 10px;padding: 0px;margin: 0px;
+}
+#comment-block a{
+color: #000;
+}
+body{
+font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+hr{
+border: 0 #ccc solid;  border-top-width: 1px;  clear: both;  height: 0;
+}
+h1{
+font-size: 25px;
+}
+h2{
+font-size: 23px;
+}
+h3{
+font-size: 21px;
+}
+h4{
+font-size: 19px;
+}
+h5{
+font-size: 17px;
+}
+h6{
+font-size: 15px;
+}
+ol{
+list-style: decimal;
+}
+ul{
+list-style: disc;
+}
+li{
+margin-left: 30px;
+}
+p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset,figure{
+margin-bottom: 20px;
+}
+.col{
+margin-left:10px; margin-right:10px;display: inline;overflow: hidden;float: left;position: relative;
+}
+.row{
+width: 960px;margin: 0 auto;overflow: hidden;
+}
+.row .row{
+margin: 0 -10px;width: auto;display: inline-block;
+}
+.col_1, .width_1{
+width:40px;
+}
+.col_2, .width_2{
+width:100px;
+}
+.col_3, .width_3{
+width:160px;
+}
+.col_4, .width_4{
+width:220px;
+}
+.col_5, .width_5{
+width:280px;
+}
+.col_6, .width_6{
+width:340px;
+}
+.col_7, .width_7{
+width:400px;
+}
+.col_8, .width_8{
+width:460px;
+}
+.col_9, .width_9{
+width:520px;
+}
+.col_10, .width_10{
+width:580px;
+}
+.col_11, .width_11{
+width:640px;
+}
+.col_12, .width_12{
+width:700px;
+}
+.col_13, .width_13{
+width:760px;
+}
+.col_14, .width_14{
+width:820px;
+}
+.col_15, .width_15{
+width:880px;
+}
+.col_16, .width_16{
+width:940px;
+}
