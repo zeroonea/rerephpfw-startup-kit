@@ -2,6 +2,7 @@ website:
     theme: default
     culture: en_US
     plugins: [firewall,facebook]
+    devmode: 1
 db:
     host: localhost
     dbname: your_db_name
