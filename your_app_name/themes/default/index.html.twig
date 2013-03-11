@@ -1,32 +1,20 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
-<title>{% block title %}{% endblock %} / ReRePHPFW Startup Kit</title>
-<meta name="description" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width">
-<link rel="shortcut icon" href="{{ get_theme_url() }}images/favicon.png" alt=""/>
-{{ add_ext_css(get_theme_url() ~ 'css/reset.css') }}
-{{ add_ext_css(get_theme_url() ~ 'css/typography.css') }}
-{{ add_ext_css(get_theme_url() ~ 'css/text.css') }}
-{{ add_ext_css(get_theme_url() ~ 'css/grid.css') }}
-{{ add_ext_css(get_theme_url() ~ 'css/style.css') }}
-{% block custom_styles %}{% endblock %}
-{{ print_all_ext_css() | raw }} 
-<script src="{{ get_theme_url() }}js/modernizr-2.5.3-respond-1.1.0.min.js"></script>
-{% block head %}{% endblock %}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>{% block title %}{% endblock %} / ReRePHPFW Starter Kit</title>
+<link rel="stylesheet" href="{{ get_theme_url() }}vendors/foundation/css/normalize.css" />
+<link rel="stylesheet" href="{{ get_theme_url() }}vendors/foundation/css/foundation.css" />
+<script src="{{ get_theme_url() }}vendors/foundation/js/vendor/custom.modernizr.js"></script>
 </head>
 <body>
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 {% block content %}{% endblock %}
-{% block external_scripts %}
-<script src="{{ get_theme_url() }}js/jquery.js"></script>
-{% endblock %}
-{% block custom_scripts %}{% endblock %}
+<script src="{{ get_theme_url() }}vendors/foundation/js/vendor/jquery.js"></script>	
+<script src="{{ get_theme_url() }}vendors/foundation/js/foundation.min.js"></script>
+<script>
+$(document).foundation();
+</script>
 </body>
 </html>
